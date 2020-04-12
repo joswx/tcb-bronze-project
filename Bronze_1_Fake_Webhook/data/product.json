@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "Product": "Abibas Yoozy 350",
+            "Size": 10,
+            "Picture_url": "https://www.sneakersnstuff.com/images/230682/product.jpg",
+            "Store": "Koth",
+            "Profile": "US",
+            "Order": "TA837421",
+            "Proxy List": "US",
+            "Mode": "Fast",
+            "Delay": 5500,
+            "Tasks": 10
+        },
+        {
+            "Product": "Nikon Air Max 90",
+            "Size": 10,
+            "Picture_url": "https://sneakernews.com/wp-content/uploads/2019/06/nike-air-max-90-python-cd0916-100-2.jpg",
+            "Store": "Koth",
+            "Profile": "US",
+            "Order": "TA837421",
+            "Proxy List": "US",
+            "Mode": "Fast",
+            "Delay": 5500,
+            "Tasks": 10
+        }
+    ]
+}

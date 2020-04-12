@@ -1,0 +1,99 @@
+{
+    "Balkobot": {
+        "username": "Fake Balko",
+        "avatar_url": "https://media.karousell.com/media/photos/products/2020/01/09/balkobot_adidas_shopify_supreme_bot_1578543566_4e8d1276b_progressive",
+        "embeds": [
+            {
+                "title": "Bako Success",
+                "description": null,
+                "url": "https://www.google.com",
+                "color": null,
+                "fields": [
+                    {
+                        "name": "Size",
+                        "value": null,
+                        "inline": true
+                    },
+                    {
+                        "name": "Product",
+                        "value": null,
+                        "inline": true
+                    },
+                    {
+                        "name": "Delay",
+                        "value": null,
+                        "inline": true
+                    },
+                    {
+                        "name": "Profile",
+                        "value": null,
+                        "inline": false
+                    },
+                    {
+                        "name": "Tasks",
+                        "value": null,
+                        "inline": false
+                    }
+                ],
+                "thumbnail": {
+                    "url": null
+                },
+                "footer": {
+                    "text": "Woah! Bako Works!",
+                    "icon_url": "https://media.karousell.com/media/photos/products/2020/01/09/balkobot_adidas_shopify_supreme_bot_1578543566_4e8d1276b_progressive"
+                }
+            }
+        ]
+    },
+    "Cybersole": {
+        "username": "Fake Cyber",
+        "avatar_url": "https://media.karousell.com/media/photos/products/2019/07/03/cybersole_aio_renewal_sneaker_bot_1562112424_29ba24eb_progressive.jpg",
+        "embeds": [
+            {
+                "title": "Successfully checked out!",
+                "description": null,
+                "url": "https://www.google.com",
+                "color": 7928398,
+                "fields": [
+                    {
+                        "name": "Store",
+                        "value": null,
+                        "inline": true
+                    },
+                    {
+                        "name": "Size",
+                        "value": null,
+                        "inline": true
+                    },
+                    {
+                        "name": "Profile",
+                        "value": null,
+                        "inline": true
+                    },
+                    {
+                        "name": "Order",
+                        "value": null,
+                        "inline": true
+                    },
+                    {
+                        "name": "Proxy List",
+                        "value": null,
+                        "inline": true
+                    },
+                    {
+                        "name": "Mode",
+                        "value": null,
+                        "inline": true
+                    }
+                ],
+                "thumbnail": {
+                    "url": null
+                },
+                "footer": {
+                    "text": "Woah! Cybo Works!",
+                    "icon_url": "https://media.karousell.com/media/photos/products/2019/07/03/cybersole_aio_renewal_sneaker_bot_1562112424_29ba24eb_progressive.jpg"
+                }
+            }
+        ]
+    }
+}
