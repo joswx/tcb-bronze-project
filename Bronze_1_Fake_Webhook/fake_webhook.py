@@ -26,6 +26,7 @@ def runner():
     if not productData['Product']:
         return populating_template(template=template_builder(botName = botName))
     try:
+        productData['url'] = input("请输入产品url, 如无请回车: ")
         productData["Size"] = input("请输入尺码 (US): ") or "N/A"
         productData["Picture_url"] = input("请输入产品图片url，如无请回车: ")
         productData["Store"] = input("请输入商店名，如无请回车: ") or "N/A"

@@ -55,5 +55,6 @@ def populating_template(template=template_builder(), productData = None,productF
             template["embeds"][0]["fields"][i]["value"] = productData[key]
     if not containsProductField:
         template["embeds"][0]["description"] = productData["Product"]
+    template["embeds"][0]['url'] = productData['url']
     template["embeds"][0]["thumbnail"]['url'] = productData["Picture_url"]
     return template
