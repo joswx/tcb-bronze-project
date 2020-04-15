@@ -65,7 +65,7 @@ def webhook_builder(data=new_product_processor()):
     if data:
         for item in data:
             template = template_loader(template_file='webhook_template.json')
-            template['embeds'][0]['title'] = item['title']
+            template['embeds'][0]['title'] = "NEW PRODUCT:  " + item['title']
             template['embeds'][0]['author']['name'] = 'Undefeated'
             template['embeds'][0]['author']['url'] = "https://undefeated.com"
             template['embeds'][0]['thumbnail']['url'] = item['image']
