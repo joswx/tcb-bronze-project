@@ -1,0 +1,23 @@
+{
+    "username": "Shopify Monitor",
+    "avatar_url": "https://i.imgur.com/4M34hi2.png",
+    "embeds": [
+        {
+            "author": {
+                "name": null,
+                "url": null
+            },
+            "title": null,
+            "description": null,
+            "url": null,
+            "fields": null,
+            "thumbnail": {
+                "url": null
+            },
+            "footer": {
+                "text": "Shopify v9.1.4",
+                "icon_url": "https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/shopify-512.png"
+            }
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "title": {
+        "path": "product@title",
+        "list": false
+    },
+    "price": {
+        "path": "product@variants@0@price",
+        "list": false
+    },
+    "image": {
+        "path": "product@images@0@src",
+        "list": false
+    },
+    "variants": {
+        "path": "product@variants",
+        "list": true,
+        "attributes": ["option2","id"]
+    }
+}
