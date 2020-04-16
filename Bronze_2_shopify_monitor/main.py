@@ -6,7 +6,7 @@ sys.path.append(os.path.dirname(__file__))
 from monitor import *
 import time
 
-WEBHOOK_URL = '
+WEBHOOK_URL = ''
 url = "https://undefeated.com/collections/all/products/adidas-x-undefeated-ultraboost-blkwhi"
 
 
