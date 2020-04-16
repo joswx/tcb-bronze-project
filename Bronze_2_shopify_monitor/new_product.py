@@ -8,7 +8,7 @@ from monitor import *
 URL = "https://undefeated.com/products"
 PROJECT_ROOT_DIR = '.'
 RESOURCE_DIR = os.path.join(PROJECT_ROOT_DIR, 'resource')
-WEBHOOK_URL = 'https://discordapp.com/api/webhooks/698806611099254831/buR4_-uKP-mjPTz8ieGJwf7t0Yh7DXXLKn_FWGZudbdpXyYKZnW07L03BnfXCb7T8VR6'
+WEBHOOK_URL = ''
 
 def get_latest_products(url=URL):
     data = fetch_json(url=URL)

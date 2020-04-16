@@ -6,7 +6,7 @@ sys.path.append(os.path.dirname(__file__))
 from monitor import *
 import time
 
-WEBHOOK_URL = 'https://discordapp.com/api/webhooks/698806611099254831/buR4_-uKP-mjPTz8ieGJwf7t0Yh7DXXLKn_FWGZudbdpXyYKZnW07L03BnfXCb7T8VR6'
+WEBHOOK_URL = '
 url = "https://undefeated.com/collections/all/products/adidas-x-undefeated-ultraboost-blkwhi"
 
 
