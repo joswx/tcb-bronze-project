@@ -2,12 +2,20 @@ import requests
 import json
 import os
 
+#default url
 URL = 'https://undefeated.com/collections/all/products/air-zoom-spiridon-cage-2-ltsmokegrey-metallicsilver'
 WEBHOOK_URL = ''
 PROJECT_ROOT_DIR = "."
 RESOURCE_DIR = os.path.join(PROJECT_ROOT_DIR,"resource")
 
 def fetch_json(url = URL):
+    """
+    :fetch json data from input url
+
+    :param url: input url to fetch for json data
+    :type url: str
+    :return dict
+    """
     url = url + '.json'
     try:
         r = requests.get(url)
@@ -25,6 +33,13 @@ def fetch_json(url = URL):
         return
 
 def template_loader(template_file = "product_template.json"):
+    """
+    :load predefined json template
+
+    :param template_file: tempalte file name to load
+    :type templatE_file: str
+    :return: dict
+    """
     templatePath = os.path.join(RESOURCE_DIR,template_file)
     try:
         with open(templatePath) as file:
@@ -35,6 +50,15 @@ def template_loader(template_file = "product_template.json"):
         return
 
 def processor(template= template_loader(),product_url = URL): 
+    """
+    :populate template with loaded data
+
+    :param template: predefined template
+    :type template: dict
+    :param product_url: product url to load data
+    :type product_url: str
+    :return: dict
+    """
     data = fetch_json(url = product_url)
     if not template or not data:
         print("error getting resources")
@@ -71,6 +95,17 @@ def processor(template= template_loader(),product_url = URL):
 
 
 def request_builder(product_url = URL,webhook_template=template_loader(template_file="webhook_template.json")):
+    """
+    :build request body with loaded data and template
+
+    :param product_url: product url to load the data 
+    :type product_url: str
+    :param webhook_template: webhook tempalte file name to load
+    :type webhook_template: str
+    :param template_file: template file name to load
+    :type template_file: str
+    :return dict
+    """
     data = processor(product_url=product_url)
     if not data:
         print("Error getting product data")
@@ -128,6 +163,16 @@ def request_builder(product_url = URL,webhook_template=template_loader(template_
     return webhook_template
 
 def webhook_sender(webhook_url = WEBHOOK_URL, product_url = URL, data = None):
+    """
+    :send webhook with populated body
+
+    :param webhook_url: webhook url to send to
+    :type webhook_url: str
+    :param product_url: product url to load
+    :type product_url: str
+    :param data: product data
+    :type data: dict
+    """
     if not data:
         data = request_builder(product_url = product_url);
     if data:

@@ -11,6 +11,13 @@ RESOURCE_DIR = os.path.join(PROJECT_ROOT_DIR, 'resource')
 WEBHOOK_URL = ''
 
 def get_latest_products(url=URL):
+    """
+    : get latest products data
+
+    :param url: url to load data from
+    :type url: str
+    :return: dict
+    """
     data = fetch_json(url=URL)
     res = {}
     product_list = []
@@ -26,6 +33,15 @@ def get_latest_products(url=URL):
         file.close()
 
 def get_new_products_id(latest='latest_products.json', prev = 'prev_products.json'):
+    """
+    :compare the latest and previous product list, return the list of newly added product ids
+
+    :param latest: latest product file name
+    :type latest: str
+    :param prev: previous product file name
+    :type prev: str
+    :return list
+    """
     try:
         with open(os.path.join(RESOURCE_DIR,latest)) as file:
             latest_data = json.load(file)['products']
@@ -40,6 +56,15 @@ def get_new_products_id(latest='latest_products.json', prev = 'prev_products.jso
         
 
 def new_product_processor(ids=get_new_products_id(), data=fetch_json(url=URL)):
+    """
+    :Given a list of ids, populate data needed to build webhook body
+
+    :param ids: list of newly added product ids
+    :type ids: list
+    :param data: json data with product information
+    :type data: dict
+    :return: dict
+    """
     product_list = []
     if ids:
         for product in data['products']:
@@ -61,6 +86,13 @@ def new_product_processor(ids=get_new_products_id(), data=fetch_json(url=URL)):
 
 
 def webhook_builder(data=new_product_processor()):
+    """
+    :build webhook request body
+    
+    :param data: products information
+    :type data: dict
+    :return: dict
+    """
     webhooks = []
     if data:
         for item in data:
